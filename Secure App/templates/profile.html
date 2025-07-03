@@ -1,0 +1,16 @@
+<!-- templates/profile.html -->
+<!doctype html>
+<html>
+  <body>
+    <h2>Profile of {{ username }}</h2>
+    <p>Email: {{ email }}</p>
+    <p>Bio: {{ bio }}</p>  <!-- auto-escaped by Jinja2 -->
+    <form method="post">
+      {{ csrf_token() }}
+      New Email: <input name="email" value="{{ email }}"><br>
+      New Bio:   <input name="bio" value="{{ bio }}"><br>
+      <input type="submit" value="Update">
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </body>
+</html>

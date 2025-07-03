@@ -1,0 +1,6 @@
+projectKey=MyWebApp2
+serverUrl=http://127.0.0.1:9000
+serverVersion=25.5.0.107428
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=MyWebApp2
+ceTaskId=9f86ef7c-bd9b-4911-b325-6072c49395fd
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=9f86ef7c-bd9b-4911-b325-6072c49395fd

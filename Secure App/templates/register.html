@@ -1,0 +1,15 @@
+<!-- templates/register.html -->
+<!doctype html>
+<html>
+  <body>
+    <h2>Register</h2>
+    <form method="post">
+      {{ form.hidden_tag() }}  <!-- CSRF token field -->
+      {{ form.username.label }} {{ form.username }}<br>
+      {{ form.password.label }} {{ form.password }}<br>
+      {{ form.email.label }}    {{ form.email }}<br>
+      {{ form.bio.label }}     {{ form.bio }}<br>
+      <input type="submit" value="Register">
+    </form>
+  </body>
+</html>
